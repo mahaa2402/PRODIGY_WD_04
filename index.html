@@ -1,0 +1,196 @@
+<html>
+    <head>
+       <title>
+          portfolio
+       </title>
+       <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+       <header class="header">
+          <a href="#" class="logo">Mahaa<span>Shri</span></a>
+             <nav class="navbar">
+                <a href="#home" class="abt">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+             </nav>
+       </header>
+
+       <section class="home">
+         <div class="profile">
+            
+         </div>
+        <div class="name">
+          <h1>
+            Hii,I'm Mahaashri!
+          </h1>
+          <h3>
+            Web developer
+           </h3>
+           <p>
+             Currently persuing MSc integrated software systems at coimbatore institute of technology.
+             
+           </p>
+           <div class="hirebtn">
+             
+             <a href="#" class="hirebtn">HIRE ME</a>
+             
+             <a href="#" class="cntbtn"> CONTACT ME</a>
+            </div>
+             
+         </div>
+          
+            
+         
+      </section>
+      <!-------about--------------->
+      <div class="about" id="about">
+         <div class="container">
+            <div class="row">
+              <div class="about-col-1">
+               <img src="cam1.jpg">
+              </div>
+              <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                  Hello,I'm Mahaashri,a sophomore software developer student with a passion for turning lines of code into meaning solutions.
+                  I have been actively engaged in honing my skills and exploring the vast landscape of coding possibilities.
+
+              
+                 <div class="tab-titles">
+                    <p class="tab-link active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-link" onclick="opentab('skills')">Skills</p>
+                  </div>
+                  <div class="tab-content active-tab" id="education">
+                     <ul>
+                        <li><span>Higher Secondary</span><br>SRMHSS</li>
+                        <li><span>College</span><br>Coimbatore Institute of Technology</li>
+                        <li><span>Course</span><br>MSc Software Systems</li>
+                     </ul>
+                  </div>
+
+                  <div class="tab-content" id="skills">
+                     <ul>
+                        <li><span>HTML</span><br>80%</li>
+                        <li><span>CSS</span><br>70%</li>
+                        <li><span>UI/UX</span><br>Designing Web Interfaces</li>
+                     </ul>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </div>
+
+      
+    <section class="services" id="services">
+      <h1 class="heading">
+         <SPAN>MY</SPAN> SERVICES
+      </h1>
+
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-hotel"></i>
+          <h3>UI/UX</h3>
+          <p>Skilled in UI/UX design principles and Proficient with tools like figma and Adobe XD.</p>
+         
+              <a href="#about" class="read">Learn more</a>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-utensils"></i>
+          <h3>Web Development</h3>
+          <p>Proficient in HTML,CSS,JavaScript</p>
+            <a href="#" class="read">Learn more</a>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-bullhorn"></i>
+          <h3>PROGRAMMING LANGUAGE</h3>
+          <p>Proficient in Python,C++,Java</p>
+          <a href="#" class="read">Learn more</a>
+        </div>
+
+       
+        
+        
+      </div>
+
+      
+   <!-----------------contact--------------->
+     <div class="container" id="contact">
+      <div class="row">
+         <div class="contact-left">
+            <h1 class="sub-title">
+               Contact<br>
+               <span> Me</span></h1>
+                
+               <p>mahaashrichandran@gmail.com</p>
+               <p>0123456789</p>
+                  
+                    
+         </div>
+                  <div class="contact-right">
+                     <form>
+                        <input type="text" name="Name " placeholder="Your Name" required><br>
+                        <br>
+                        <input type="text" name="Mail " placeholder="Your Mail" required><br><br>
+                        <input type="text" name="phoneno " placeholder="Your Phone Number" required><br><br>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea><br><br>
+                        <button type="submit">Submit</button>
+                     </form>
+                  </div>
+               
+            
+            
+            
+            </div>
+      </div>
+     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+      <script>
+        
+          var tablinks= document.getElementsByClassName("tab-link");
+          var tabcontents=document.getElementsByClassName("tab-content");
+          
+          function opentab(tabname)
+          {
+            for(tablink of tablinks)
+            {
+               tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents)
+            {
+               tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+         }
+            </script>
+        
+               
+            
+           
+      
+    
+  
+    </body>
+</html>
